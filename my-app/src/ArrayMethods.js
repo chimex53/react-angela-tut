@@ -46,4 +46,21 @@ console.log(newNumber);
 
  */
 
+/* const phones=['apple','nokia','redmi'];
+const laptop=['lenovo','dell','macbook pro',...phones]
+console.log(laptop);
 
+
+ */
+
+const fullname={
+    fname: 'ugwu',
+    lname: 'chimezie'
+}
+
+const user={
+    ...fullname,
+    id: 1,
+    username: "chimex4344"
+}
+console.log(user);

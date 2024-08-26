@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import React, {useState} from "react";
-import Input from './Events/Input';
+/* import Input from './Events/Input'; */
+/* import ComplexState from './ComplexState/ComplexState'; */
 
-
+import Todo from './todolist/Todo';
 
 /* import Practice from './object/Practice.jsx'; */
 /* import './sytling.css' */
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
 {/*   <UseStatePrac /> */}
 {/* <Practice/> */}
-<Input />
+{/* <Input /> */}
+<Todo/>
   </StrictMode>,
 )
