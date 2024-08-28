@@ -6,6 +6,7 @@ import React, { useState } from "react";
 /* import ComplexState from './ComplexState/ComplexState'; */
 
 import Todo from "./todolist/Todo";
+import TodoItem from "./todolist/TodoItem";
 
 /* import Practice from './object/Practice.jsx'; */
 /* import './sytling.css' */
@@ -20,5 +21,6 @@ createRoot(document.getElementById("root")).render(
     {/* <Practice/> */}
     {/* <Input /> */}
     <Todo />
+    <TodoItem />
   </StrictMode>
 );
