@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./todo.css";
 import { IoAdd } from "react-icons/io5";
-import { AiOutlineEnter } from "react-icons/ai";
 import TodoItem from "./TodoItem";
 
 function Todo() {
@@ -13,8 +12,10 @@ function Todo() {
     setInputText(newValue);
   }
 
-  function addItem() {
-    console.log("inputText:", inputText);
+  function addItem(e) {
+    e.preventDefault();
+
+    /* console.log("inputText:", inputText); */
     if (inputText?.trim() == "" || inputText == undefined) {
       alert("Please enter a todo!");
       return;
@@ -44,25 +45,23 @@ function Todo() {
       <div className="heading">
         <h1>Todo-list</h1>
       </div>
-      <div className="form">
+      <form>
         <div className="input_container">
           <input
             type="text"
             value={inputText}
             onChange={handleChange}
-            placeholder="Add to list"
+            placeholder="Enter Todo-list"
             className="input"
             onKeyDown={handleKeyPress}
           />
-          <AiOutlineEnter className="icon" />
+          <button onClick={addItem} className="Add-btn">
+            <span>
+              <IoAdd />
+            </span>
+          </button>
         </div>
-
-        <button onClick={addItem}>
-          <span>
-            <IoAdd />
-          </span>
-        </button>
-      </div>
+      </form>
 
       <div>
         <ul>

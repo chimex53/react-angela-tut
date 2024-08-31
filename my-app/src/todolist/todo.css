@@ -5,85 +5,57 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: #eee;
-}
-
-.container{
-    background-color: #333;
-    height: 500px; 
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-     word-wrap: break-word;
-
+    height: 100%;
 }
 
 h1{
+    background-color: #333;
     color: #fff;
-    margin-left: 10px;
     text-align: center;
+    text-transform: capitalize;
+    padding: 15px;
 }
 
 .input_container{
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    padding-left:7px;
-    width: 100%;
-    height: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
     margin: 0 auto;
-    background-color:#fff ;
+    margin-top: 50px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
     display: flex;
-    align-items: center;
 }
 
-.input_container input{
+.input{
+    display: block;
+    border: none;
+    width: 100%;
+    color: black;
+    font-size: 16px;
+  
+}
+
+.input:focus{
     outline: none;
-    border-width: 0px;
 }
 
-.form {
-    /* position: absolute; */
-    left: 10px; /* Adjust based on icon size */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-   
-    font-size: 20px;
-}
-::placeholder{
-    color: #ec0a0a;
-    padding: 10px;
-}
-
-ul li{
-    color: #fff;
-    margin-top: 20px;
-}
-button{
-    background-color: crimson;
-    color: #fff;
-    outline: none;
+.Add-btn{
+    display: inline-block;
     border: none;
     border-radius: 5px;
-    margin: 0 auto;
-    width: 100px;
-    height: 30px;
-    margin-top: 30px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    margin-left: 10px;
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover{
-    background-color: #2980b9;
-    transform: scale(1.1);
+.Add-btn:hover{
+    background-color: crimson;
+    color: #fff;
+    transform: scale(1.05);
 }
-
-button span{
-    font-size: 0.8rem;
+h3{
+    text-align: center;
 }

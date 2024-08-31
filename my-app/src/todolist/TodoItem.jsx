@@ -7,7 +7,7 @@ function TodoItem(props) {
         props.onChecked(props.id);
       }}
     >
-      <li>{props.text} </li>
+      <h3>{props.text} </h3>
     </div>
   );
 }
