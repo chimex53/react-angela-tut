@@ -3,11 +3,12 @@ import React from "react";
 function TodoItem(props) {
   return (
     <div
+      className
       onClick={() => {
         props.onChecked(props.id);
       }}
     >
-      <h3>{props.text} </h3>
+      <li>{props.text} </li>
     </div>
   );
 }

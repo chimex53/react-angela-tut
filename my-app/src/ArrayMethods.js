@@ -52,15 +52,20 @@ console.log(laptop);
 
 
  */
+/*  */
+/* const fullname={ */
+/*     fname: 'ugwu', */
+/*     lname: 'chimezie' */
+/* } */
+/*  */
+/* const user={ */
+/*     ...fullname, */
+/*     id: 1, */
+/*     username: "chimex4344" */
+/* } */
+/* console.log(user); */
+/*  */
 
-const fullname={
-    fname: 'ugwu',
-    lname: 'chimezie'
-}
-
-const user={
-    ...fullname,
-    id: 1,
-    username: "chimex4344"
-}
-console.log(user);
+const num=[100 ,100000,23,45,56,77];
+num.sort((a,b)=>b-a)
+console.log(num);

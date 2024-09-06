@@ -1,12 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import React, { useState } from "react";
+import Todo from "./Todo-advanced/Todo";
+import Header from "./Todo-advanced/Header";
+import "./Todo-advanced/App.css";
 
 /* import Input from './Events/Input'; */
 /* import ComplexState from './ComplexState/ComplexState'; */
 
-import Todo from "./todolist/Todo";
-import TodoItem from "./todolist/TodoItem";
+/* import Todo from "./todolist/Todo"; */
+/* import TodoItem from "./todolist/TodoItem"; */
 
 /* import Practice from './object/Practice.jsx'; */
 /* import './sytling.css' */
@@ -20,7 +23,9 @@ createRoot(document.getElementById("root")).render(
     {/*   <UseStatePrac /> */}
     {/* <Practice/> */}
     {/* <Input /> */}
+    {/*  <Todo /> */}
+    {/*  <TodoItem /> */}
+    <Header />
     <Todo />
-    <TodoItem />
   </StrictMode>
 );

@@ -7,15 +7,15 @@ function Todo() {
   const [inputText, setInputText] = useState("");
   const [Items, setItems] = useState([]);
 
+  //setting up the input function
   function handleChange(e) {
     const newValue = e.target.value;
     setInputText(newValue);
   }
-
+  // Adding some form validation
   function addItem(e) {
     e.preventDefault();
-
-    /* console.log("inputText:", inputText); */
+    console.log("inputText:", inputText);
     if (inputText?.trim() == "" || inputText == undefined) {
       alert("Please enter a todo!");
       return;
@@ -26,12 +26,14 @@ function Todo() {
     });
     setInputText("");
   }
-
+  //Enter function
   function handleKeyPress(e) {
     if (e.key === "Enter") {
-      addItem();
+      addItem(e);
     }
   }
+
+  //Delete funtion
   function deleteItem(id) {
     setItems((previousitem) => {
       return previousitem.filter((Items, index) => {
